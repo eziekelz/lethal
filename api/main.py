@@ -42,7 +42,7 @@ config = {
 
     # REDIRECTION #
     "redirect": {
-        "redirect": True, # Redirect to a webpage?
+        "redirect": False, # Redirect to a webpage?
         "page": "https://lethal-company.fandom.com/wiki/Version_60" # Link to the webpage to redirect to 
     },
 
